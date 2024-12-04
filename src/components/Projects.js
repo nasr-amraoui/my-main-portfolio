@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaEye } from 'react-icons/fa';
 
 const categories = [
-  { id: 'All', label: 'All Projects' },
   { id: 'Web', label: 'Web Apps' },
   { id: 'Mobile', label: 'Mobile Apps' },
   { id: 'Game', label: 'Games' }
@@ -11,16 +10,6 @@ const categories = [
 
 const projectsList = [
   // Web Projects
-  {
-    id: 'web1',
-    title: 'E-Commerce Platform',
-    description: 'A modern e-commerce platform with real-time inventory management and secure payment processing.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&h=400',
-    category: 'Web'
-  },
   {
     id: 'web2',
     title: 'Social Media Dashboard',
@@ -84,26 +73,6 @@ const projectsList = [
     live: 'https://example.com',
     image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=800&h=400',
     category: 'Game'
-  },
-  {
-    id: 'game2',
-    title: 'Puzzle Quest',
-    description: 'Brain-teasing puzzle game with unique mechanics and progressive difficulty.',
-    tech: ['Godot', 'GDScript', 'Aseprite', 'Audacity'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-    image: 'https://images.unsplash.com/photo-1614066591435-b7f49a34e6cf?auto=format&fit=crop&w=800&h=400',
-    category: 'Game'
-  },
-  {
-    id: 'game3',
-    title: 'RPG Adventure',
-    description: 'Story-driven RPG with dynamic combat system and character customization.',
-    tech: ['Unreal Engine', 'C++', 'Maya', 'Wwise'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&h=400',
-    category: 'Game'
   }
 ];
 
@@ -118,7 +87,7 @@ const Projects = () => {
   return (
     <section id="projects" className="min-h-screen py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-8">
+        <h2 className="text-6xl font-bold text-center text-Primary mb-8">
           My Projects
         </h2>
         

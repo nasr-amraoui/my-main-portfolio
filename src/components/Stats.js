@@ -97,7 +97,7 @@ const Stats = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-6xl font-bold text-[#64ffda] mb-4">Journey</h2>
+          <h2 className="text-6xl font-bold text-Primary mb-8">Journey</h2>
           <p className="text-[#8892b0] text-lg max-w-2xl mx-auto">
             A snapshot of my journey in software development
           </p>

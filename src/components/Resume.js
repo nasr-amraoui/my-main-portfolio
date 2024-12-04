@@ -72,8 +72,7 @@ const Resume = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-6xl font-bold text-center text-[#ccd6f6] mb-16"
-        >
+          className="text-6xl font-bold text-center text-Primary mb-16">
           Resume
         </motion.h2>
 
