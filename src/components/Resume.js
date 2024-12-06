@@ -28,16 +28,16 @@ const Resume = () => {
 
   const education = [
     {
-      title: "Master's in Computer Science",
-      institution: "Your University",
+      title: "Technicienne spécialisée au développement digital",
+      institution: "Cité Des Métiers Et Des Compétences",
       period: "2020 - 2022",
       description: "Specialized in Web Technologies and Software Engineering. Graduated with honors.",
       type: "education"
     },
     {
-      title: "Bachelor's in Computer Science",
-      institution: "Your University",
-      period: "2017 - 2020",
+      title: "Bachaloia sciance physique et chimie",
+      institution: "ABAS MEHMMOUD AL'AKKAD",
+      period: "2022",
       description: "Core focus on programming fundamentals, algorithms, and data structures.",
       type: "education"
     }

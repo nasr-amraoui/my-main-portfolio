@@ -75,10 +75,10 @@ const Counter = ({ end, duration = 2, label, sublabel, icon: Icon }) => {
 const Stats = () => {
   const stats = [
     { value: 3, label: '+', title: 'Years Experience', icon: FaClock },
-    { value: '4.5k', title: 'Coding Hours', icon: FaCode },
-    { value: 150, label: '+', title: 'Problems Solved', icon: SiLeetcode },
-    { value: 15, label: '+', title: 'Projects Completed', icon: FaGithub },
-    { value: 4, label: '+', title: 'Technologies Mastered', icon: FaLightbulb },
+    { value: 2500, title: 'Coding Hours', icon: FaCode },
+    { value: 159, label: '+', title: 'Problems Solved', icon: SiLeetcode },
+    { value: 12, label: '+', title: 'Projects Completed', icon: FaGithub },
+    { value: 6, label: '+', title: 'Technologies Mastered', icon: FaLightbulb },
     { value: '∞', title: 'Cups of Coffee', icon: FaCoffee },
   ];
 

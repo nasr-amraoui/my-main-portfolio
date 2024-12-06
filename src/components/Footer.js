@@ -8,9 +8,9 @@ const Footer = () => {
   
   const socialLinks = [
     { icon: FaGithub, href: 'https://github.com/nasr-amraoui', label: 'GitHub' },
-    { icon: FaLinkedinIn, href: 'https://linkedin.com/in/nasr-amraoui', label: 'LinkedIn' },
-    { icon: FaTwitter, href: 'https://twitter.com/nasr_amraoui', label: 'Twitter' },
-    { icon: FaEnvelope, href: 'mailto:nasr.amraoui@gmail.com', label: 'Email' },
+    { icon: FaLinkedinIn, href: 'https://www.linkedin.com/in/nasreddine-amraoui-469928245/', label: 'LinkedIn' },
+    { icon: FaTwitter, href: 'https://x.com/nasser_amraoui', label: 'Twitter' },
+    { icon: FaEnvelope, href: 'mailto:nasreddine.amraoui.2004@gmail.com', label: 'Email' },
   ];
 
   return (

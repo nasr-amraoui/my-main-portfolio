@@ -139,10 +139,10 @@ const Contact = () => {
                   <div>
                     <h4 className="text-[#ccd6f6] font-medium">Email</h4>
                     <a
-                      href="mailto:nasreddine.amraoui@gmail.com"
+                      href="mailto:nasreddine.amraoui.2004@gmail.com"
                       className="text-[#8892b0] hover:text-[#64ffda] transition-colors"
                     >
-                      nasreddine.amraoui@gmail.com
+                      nasreddine.amraoui.2004@gmail.com
                     </a>
                   </div>
                 </div>
@@ -154,7 +154,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-[#ccd6f6] font-medium">Location</h4>
-                    <p className="text-[#8892b0]">Algiers, Algeria</p>
+                    <p className="text-[#8892b0]">Sale, Morocco 📍</p>
                   </div>
                 </div>
               </div>

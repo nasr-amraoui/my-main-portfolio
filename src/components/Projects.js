@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaEye } from 'react-icons/fa';
 
 const categories = [
-  { id: 'Web', label: 'Web Apps' },
+  { id: 'Web', label: 'Websites' },
   { id: 'Mobile', label: 'Mobile Apps' },
   { id: 'Game', label: 'Games' }
 ];
@@ -12,9 +12,8 @@ const projectsList = [
   // Web Projects
   {
     id: 'web2',
-    title: 'Social Media Dashboard',
-    description: 'Analytics dashboard for social media management with real-time data visualization.',
-    tech: ['Vue.js', 'Firebase', 'D3.js', 'TailwindCSS'],
+    title: 'My main portfolio',
+    description: 'My main professional portfolio website.',
     github: 'https://github.com',
     live: 'https://example.com',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&h=400',
@@ -22,9 +21,8 @@ const projectsList = [
   },
   {
     id: 'web3',
-    title: 'Cloud File Manager',
-    description: 'Secure cloud storage solution with file sharing and collaboration features.',
-    tech: ['Angular', 'AWS', 'TypeScript', 'Material UI'],
+    title: 'Restaurant Website',
+    description: 'A landing page for a restaurant.',
     github: 'https://github.com',
     live: 'https://example.com',
     image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&h=400',
@@ -34,9 +32,8 @@ const projectsList = [
   // Mobile Projects
   {
     id: 'mobile1',
-    title: 'Fitness Tracker',
-    description: 'Mobile app for tracking workouts, nutrition, and health metrics with personalized recommendations.',
-    tech: ['React Native', 'Redux', 'Firebase', 'HealthKit'],
+    title: 'Spinner',
+    description: 'Spinning wheel mobile app for fun.',
     github: 'https://github.com',
     live: 'https://example.com',
     image: 'https://images.unsplash.com/photo-1461773518188-b3e86f98242f?auto=format&fit=crop&w=800&h=400',
@@ -44,9 +41,8 @@ const projectsList = [
   },
   {
     id: 'mobile2',
-    title: 'Travel Companion',
-    description: 'All-in-one travel app with itinerary planning, booking, and local recommendations.',
-    tech: ['Flutter', 'Dart', 'Google Maps', 'Firebase'],
+    title: "Today's Weather",
+    description: 'Mobile app that provides real-time weather conditions.',
     github: 'https://github.com',
     live: 'https://example.com',
     image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&h=400',
@@ -54,9 +50,8 @@ const projectsList = [
   },
   {
     id: 'mobile3',
-    title: 'AR Shopping',
-    description: 'Augmented reality shopping app allowing users to visualize products in their space.',
-    tech: ['Swift', 'ARKit', 'CoreML', 'Metal'],
+    title: 'Talk Mate',
+    description: 'An AI chat-bot, based on Gemini API.',
     github: 'https://github.com',
     live: 'https://example.com',
     image: 'https://images.unsplash.com/photo-1633536726481-465c3676851d?auto=format&fit=crop&w=800&h=400',
@@ -66,8 +61,8 @@ const projectsList = [
   // Game Projects
   {
     id: 'game1',
-    title: 'Space Explorer',
-    description: 'Immersive 3D space exploration game with procedurally generated worlds.',
+    title: 'Slimes VS Spikes',
+    description: 'A 2D-platformmer Desktop/mobile game.',
     tech: ['Unity', 'C#', 'Blender', 'HLSL'],
     github: 'https://github.com',
     live: 'https://example.com',
