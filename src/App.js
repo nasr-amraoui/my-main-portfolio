@@ -68,7 +68,7 @@ function App() {
                 variants={fadeInUp}
                 className="text-textSecondary max-w-2xl mb-8"
               >
-                Passionate developer with expertise in web development and software engineering.
+                I'm <span className='text-secondary'>NasrEddine Amraoui</span>, a passionate developer with expertise in web & mobile development. 
                 I create modern and efficient solutions using cutting-edge technologies.
               </motion.p>
               <motion.div 
@@ -118,7 +118,6 @@ function App() {
               </motion.div>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: [0, 10, 0] }}
               transition={{
                 duration: 1.2,
