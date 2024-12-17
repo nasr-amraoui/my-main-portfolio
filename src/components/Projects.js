@@ -82,10 +82,7 @@ const Projects = () => {
   return (
     <section id="projects" className="min-h-screen py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-6xl font-bold text-center text-Primary mb-8">
-          My Projects
-        </h2>
-        
+        <h2 className="text-6xl font-bold text-center text-Primary mb-8">Projects</h2>
         {/* Category Filter Buttons */}
         <div className="flex justify-center gap-4 mb-8">
           {categories.map((category, idx) => (

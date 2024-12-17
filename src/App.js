@@ -54,7 +54,7 @@ function App() {
             >
               <motion.h1 
                 variants={fadeInUp}
-                className="text-4xl md:text-6xl font-bold text-textPrimary mb-4"
+                className="text-4xl md:text-6xl font-bold text-Primary mb-4"
               >
                 AMR._.DEV
               </motion.h1>

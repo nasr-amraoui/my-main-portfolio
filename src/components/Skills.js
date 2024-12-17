@@ -113,7 +113,7 @@ const Skills = () => {
     <div className="min-h-screen relative overflow-hidden py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-6xl font-bold text-Primary mb-8">My Skills</h2>
+          <h2 className="text-6xl font-bold text-Primary mb-8">Skills</h2>
           <div className="flex flex-wrap justify-center gap-4 mb-12">
             {skillCategories.map((category, idx) => (
               <motion.button
