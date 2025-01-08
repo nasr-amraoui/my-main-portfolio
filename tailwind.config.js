@@ -5,19 +5,21 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        primary: "#0a192f",
-        secondary: "#64ffda",
-        textPrimary: "#ccd6f6",
-        textSecondary: "#8892b0",
-      },
-      zIndex: {
-        '-10': '-10',
+      keyframes: {
+        infiniteSlideLeft: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        infiniteSlideRight: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(100%)' },
+        }
       },
       animation: {
-        'spin-slow': 'spin 20s linear infinite',
+        'infinite-slide-left': 'infiniteSlideLeft 15s linear infinite',
+        'infinite-slide-right': 'infiniteSlideRight 15s linear infinite',
       }
     },
   },
   plugins: [],
-}
+};
