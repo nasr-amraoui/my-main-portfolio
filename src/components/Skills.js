@@ -1,5 +1,4 @@
 import React from 'react';
-import Marquee from 'react-fast-marquee';
 import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaReact, FaPhp, FaNodeJs, FaUnity, FaSwift, FaPython } from 'react-icons/fa';
 import { SiTailwindcss, SiKotlin, SiFlutter, SiCsharp, SiMysql, SiFirebase, SiGodotengine } from 'react-icons/si';
 
@@ -28,22 +27,16 @@ const databaseSkills = [
   { name: 'SQL', icon: SiMysql, color: '#4479A1' },
   { name: 'Firebase', icon: SiFirebase, color: '#FFCA28' },
   { name: 'Node.js', icon: FaNodeJs, color: '#339933' },
+  { name: 'Python', icon: FaPython, color: '#306998' },
   { name: 'PHP', icon: FaPhp, color: '#777BB4' },
 ];
 
 const SkillItem = ({ skill }) => {
   const SkillIcon = skill.icon;
   return (
-    <div 
-      className="flex items-center justify-center mx-4 my-2 p-3 
-      bg-white/10 backdrop-blur-md rounded-lg shadow-lg 
-      transform transition-all duration-300 hover:scale-105"
-    >
-      <SkillIcon 
-        className="text-3xl mr-3" 
-        style={{ color: skill.color }}
-      />
-      <span className="text-sm text-white">{skill.name}</span>
+    <div className="flex items-center mx-4 my-2 p-2 bg-gray-800 rounded-lg">
+      <SkillIcon className="text-2xl" style={{ color: skill.color }} />
+      <span className="ml-2 text-sm text-gray-300">{skill.name}</span>
     </div>
   );
 };
@@ -57,16 +50,16 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">
-          My Skills
+        <h2 className="text-3xl font-bold text-white mb-8 text-center">
+          Skills
         </h2>
-        <div className="space-y-6">
+        <div className="space-y-8">
           {skillRows.map((row, rowIndex) => (
             <div 
               key={rowIndex} 
-              className="relative w-full h-20 overflow-hidden"
+              className="relative w-full h-16 overflow-hidden"
             >
               <div className={`
                 flex absolute left-0 top-0 w-[200%]
@@ -74,7 +67,7 @@ const Skills = () => {
                   ? 'animate-infinite-slide-left' 
                   : 'animate-infinite-slide-right'}
               `}>
-                {[...row.skills, ...row.skills, ...row.skills].map((skill, index) => (
+                {[...row.skills, ...row.skills].map((skill, index) => (
                   <SkillItem key={`${skill.name}-${index}`} skill={skill} />
                 ))}
               </div>

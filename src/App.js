@@ -6,7 +6,6 @@ import { HiArrowDown } from 'react-icons/hi';
 import ParticlesBackground from './components/ParticlesBackground';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import Navbar from './components/Navbar';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Stats from './components/Stats';
@@ -39,7 +38,6 @@ function App() {
   return (
     <div className="bg-[#0a192f] text-white min-h-screen overflow-hidden">
       <ParticlesBackground />
-      <Navbar />
       
       <main className="relative overflow-hidden">
         {/* Hero Section */}
