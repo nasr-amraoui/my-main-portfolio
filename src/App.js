@@ -52,21 +52,21 @@ function App() {
             >
               <motion.h1 
                 variants={fadeInUp}
-                className="text-4xl text-[#64ffda] md:text-6xl font-bold text-Primary mb-4"
+                className="text-4xl md:text-6xl font-bold text-Primary mb-4"
               >
                 AMR._.DEV
               </motion.h1>
               <motion.h2 
                 variants={fadeInUp}
-                className="text-xl md:text-2xl text-secondary mb-6"
+                className="text-xl md:text-2xl text-[#64ffda] text-secondary mb-6"
               >
                 Mobile & Web Developer
               </motion.h2>
               <motion.p 
                 variants={fadeInUp}
-                className="text-textSecondary max-w-2xl mb-8"
+                className="text-gray-400 max-w-2xl mb-8"
               >
-                I'm <span className='text-secondary'>NasrEddine Amraoui</span>, a passionate developer with expertise in web & mobile development. 
+                I'm <span className='text-[#64ffda]'>NasrEddine Amraoui</span>, a passionate developer with expertise in web & mobile development. 
                 I create modern and efficient solutions using cutting-edge technologies.
               </motion.p>
               <motion.div 

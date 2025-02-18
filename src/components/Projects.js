@@ -11,16 +11,16 @@ const categories = [
 const projectsList = [
   // Web Projects
   {
-    id: 'web2',
-    title: 'My main portfolio',
-    description: 'My main professional portfolio website.',
-    github: 'https://github.com',
-    live: 'https://example.com',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&h=400',
+    id: 'web1',
+    title: 'AMR._.DEV Portfolio',
+    description: 'this is my main professional portfolio website.',
+    github: 'https://github.com/nasr-amraoui/my-main-portfolio.git',
+    live: 'https://amr-dev-500ab.web.app/',
+    image: '/homePagePortfolio.png',
     category: 'Web'
   },
   {
-    id: 'web3',
+    id: 'web2',
     title: 'Restaurant Website',
     description: 'A landing page for a restaurant.',
     github: 'https://github.com',
@@ -82,7 +82,7 @@ const Projects = () => {
   return (
     <section id="projects" className="min-h-screen py-20">
       <div className="container mx-auto px-4">
-      <h2 className="text-6xl font-bold text-center text-Primary mb-12">Projects</h2>
+        <h2 className="text-6xl font-bold text-center text-Primary mb-12">Projects</h2>
         {/* Category Filter Buttons */}
         <div className="flex justify-center gap-4 mb-8">
           {categories.map((category, idx) => (
@@ -154,6 +154,25 @@ const Projects = () => {
           ))}
         </div>
       </div>
+
+      {/* Add a media query for phone screens */}
+      <style>
+        {`
+          @media (max-width: 767px) {
+            .px-6 {
+              padding-left: 1rem;
+              padding-right: 1rem;
+            }
+            .py-2.5 {
+              padding-top: 0.5rem;
+              padding-bottom: 0.5rem;
+            }
+            .text-sm {
+              font-size: 0.875rem;
+            }
+          }
+        `}
+      </style>
     </section>
   );
 };

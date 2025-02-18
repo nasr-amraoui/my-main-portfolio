@@ -29,9 +29,16 @@ const Resume = () => {
   const education = [
     {
       title: "Technicienne spécialisée au développement digital",
-      institution: "Cité Des Métiers Et Des Compétences",
-      period: "2020 - 2022",
+      institution: "Cité Des Métiers Et Des Compétences - Rabat Salé Kénitra",
+      period: "2023 - 2025",
       description: "Specialized in Web Technologies and Software Engineering. Graduated with honors.",
+      type: "education"
+    },
+    {
+      title: "Sciences Mathématiques et Physiques Chimie - SMPC",
+      institution: "La faculté des sciences de Rabat",
+      period: "2022 - 2023",
+      description: "Une formation en sciences mathématiques et physiques avec une spécialisation en chimie",
       type: "education"
     },
     {
@@ -82,7 +89,7 @@ const Resume = () => {
             className="flex justify-center mb-16"
           >
             <a
-              href="/path-to-your-resume.pdf"
+              href="/AMRAOUI_NasrEddine_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center px-6 py-2.5 bg-transparent border border-[#64ffda] text-[#64ffda] rounded-full

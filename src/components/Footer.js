@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="h-[1px] w-24 bg-gradient-to-l from-transparent to-[#64ffda]" />
           </div>
 
-          <h2 className="text-2xl font-bold text-Primary mb-6">Let's Connect</h2>
+          <h2 className="text-2xl text-Primary mb-6 ">Thank you for visiting my portfolio</h2>
           
           <div className="flex justify-center gap-6 mb-8">
             {socialLinks.map((social, index) => (
