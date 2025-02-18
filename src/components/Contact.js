@@ -72,9 +72,6 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-6xl font-bold text-Primary mb-8">Get in Touch</h2>
-          <p className="text-[#8892b0] text-lg max-w-2xl mx-auto">
-            Have a question or want to work together? Feel free to reach out!
-          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-5 gap-12">

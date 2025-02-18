@@ -1,13 +1,14 @@
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaReact, FaPhp, FaNodeJs, FaUnity, FaSwift, FaPython } from 'react-icons/fa';
-import { SiTailwindcss, SiKotlin, SiFlutter, SiCsharp, SiMysql, SiFirebase, SiGodotengine } from 'react-icons/si';
+import { SiTailwindcss, SiKotlin, SiFlutter, SiMysql, SiFirebase, SiGodotengine } from 'react-icons/si';
+import { motion } from 'framer-motion';
 
 const frontEndSkills = [
   { name: 'HTML', icon: FaHtml5, color: '#E34F26' },
   { name: 'CSS', icon: FaCss3Alt, color: '#1572B6' },
   { name: 'JavaScript', icon: FaJs, color: '#F7DF1E' },
-  { name: 'Bootstrap', icon: FaBootstrap, color: '#7952B3' },
   { name: 'ReactJS', icon: FaReact, color: '#01D3F9' },
+  { name: 'Bootstrap', icon: FaBootstrap, color: '#7952B3' },
   { name: 'Tailwind', icon: SiTailwindcss, color: '#06B6D4' },
 ];
 
@@ -18,7 +19,6 @@ const mobileSkills = [
 ];
 
 const gameDevSkills = [
-  { name: 'C#', icon: SiCsharp, color: '#239120' },
   { name: 'Unity', icon: FaUnity, color: '#000000' },
   { name: 'Godot', icon: SiGodotengine, color: '#478CBF' },
 ];
@@ -33,42 +33,45 @@ const databaseSkills = [
 
 const SkillItem = ({ skill }) => {
   const SkillIcon = skill.icon;
+
   return (
-    <div className="flex items-center mx-4 my-2 p-2 bg-gray-800 rounded-lg">
-      <SkillIcon className="text-2xl" style={{ color: skill.color }} />
-      <span className="ml-2 text-sm text-gray-300">{skill.name}</span>
-    </div>
+    <motion.div
+      className="relative flex items-center justify-center w-24 h-24 rounded-lg transition-all duration-300 hover:scale-110 group"
+      initial={{ y: 0 }}
+      animate={{ y: [0, 0, 0] }}
+      transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
+    >
+      <SkillIcon className="text-5xl" style={{ color: skill.color }} />
+      <div className="absolute bottom-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <span className="text-sm text-gray-700 dark:text-gray-300 font-medium">
+          {skill.name}
+        </span>
+      </div>
+    </motion.div>
   );
 };
 
 const Skills = () => {
-  const skillRows = [
-    { skills: frontEndSkills, direction: 'left' },
-    { skills: mobileSkills, direction: 'right' },
-    { skills: gameDevSkills, direction: 'left' },
-    { skills: databaseSkills, direction: 'right' },
+  const skillCategories = [
+    { title: 'Frontend Development', skills: frontEndSkills },
+    { title: 'Mobile Development', skills: mobileSkills },
+    { title: 'Game Development', skills: gameDevSkills },
+    { title: 'Database & Backend', skills: databaseSkills },
   ];
 
   return (
     <section id="skills" className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">
-          Skills
-        </h2>
-        <div className="space-y-8">
-          {skillRows.map((row, rowIndex) => (
-            <div 
-              key={rowIndex} 
-              className="relative w-full h-16 overflow-hidden"
-            >
-              <div className={`
-                flex absolute left-0 top-0 w-[200%]
-                ${row.direction === 'left' 
-                  ? 'animate-infinite-slide-left' 
-                  : 'animate-infinite-slide-right'}
-              `}>
-                {[...row.skills, ...row.skills].map((skill, index) => (
-                  <SkillItem key={`${skill.name}-${index}`} skill={skill} />
+      <h2 className="text-6xl font-bold text-center text-Primary mb-8">Skills</h2>
+        <div className="space-y-12">
+          {skillCategories.map((category, index) => (
+            <div key={index} className="text-center">
+              <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300">
+                {category.title}
+              </h3>
+              <div className="flex flex-wrap justify-center gap-6">
+                {category.skills.map((skill) => (
+                  <SkillItem key={skill.name} skill={skill} />
                 ))}
               </div>
             </div>

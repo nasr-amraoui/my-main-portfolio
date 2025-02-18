@@ -98,9 +98,6 @@ const Stats = () => {
           className="text-center mb-16"
         >
           <h2 className="text-6xl font-bold text-Primary mb-8">Journey</h2>
-          <p className="text-[#8892b0] text-lg max-w-2xl mx-auto">
-            A snapshot of my journey in software development
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 mt-24">
